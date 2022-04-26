@@ -54,6 +54,7 @@ public class CSVReader {
 		citiesList.forEach(System.out::println);
 	}
 
+	// first part
 	public static Comparator<CityEntity> COMPARE_BY_NAME = new Comparator<CityEntity>() {
 		@Override
 		public int compare(CityEntity o1, CityEntity o2) {
@@ -61,6 +62,8 @@ public class CSVReader {
 		}
 	};
 
+	//second part. need to test this
+	// maybe this better only for multiple parameters
 	public static Comparator compareByNameAndDistrict(){
 		return Comparator.comparing(CityEntity::getDistrict).thenComparing(CityEntity::getName);
 	}

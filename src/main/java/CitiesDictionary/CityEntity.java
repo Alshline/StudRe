@@ -2,12 +2,10 @@ package CitiesDictionary;
 
 public class CityEntity {
 	
-	//private int id;		removed parameter
-	
 	private String name;
 	private String region;
 	private String district;
-	private int population; // another type (String-->int)
+	private int population;
 	private String foundation;
 	
 	// added constructor and removed getters and setters
@@ -33,6 +31,14 @@ public class CityEntity {
 
 	public String getDistrict(){
 		return this.district;
+	}
+
+	public int getPopulation() {
+		return this.population;
+	}
+
+	public String getRegion(){
+		return this.region;
 	}
 	
 }
